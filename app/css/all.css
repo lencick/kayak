@@ -1,0 +1,224 @@
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "LobsterRegular";
+  src: url("../fonts/lobsterRegular/lobsterRegular.eot");
+  src: url("../fonts/lobsterRegular/lobsterRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/lobsterRegular/lobsterRegular.woff") format("woff"), url("../fonts/lobsterRegular/lobsterRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #fff;
+  font-family: "OpenSansRegular";
+  min-width: 320px;
+  font-size: 25px;
+  color: #4c535b;
+  text-align: center; }
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: hidden; }
+
+header .top_line {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%; }
+
+header h1 a {
+  color: #44c0c2;
+  font-family: "LobsterRegular";
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 24px;
+  float: left;
+  padding: 30px 0;
+  text-decoration: none; }
+
+header nav {
+  float: right; }
+  header nav ul li {
+    display: inline-block; }
+    header nav ul li a {
+      font-family: "OpenSansRegular";
+      font-size: 15px;
+      line-height: 24px;
+      color: #4c535b;
+      text-decoration: none;
+      padding: 30px 20px;
+      display: block; }
+      header nav ul li a.active, header nav ul li a:hover {
+        border-bottom: 3px solid #44c0c2; }
+
+header .banner {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 50px 30px; }
+  header .banner .text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translate(0px, -50%);
+        -ms-transform: translate(0px, -50%);
+            transform: translate(0px, -50%); }
+  header .banner h2 {
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.26);
+    color: #fff;
+    font-size: 52px;
+    margin-bottom: 50px;
+    font-weight: 300; }
+  header .banner p {
+    color: #fff;
+    font-size: 31px;
+    line-height: 37px;
+    max-width: 590px;
+    margin: 0 auto;
+    margin-bottom: 60px; }
+  header .banner button {
+    color: #fff;
+    font-size: 23px;
+    line-height: 23px;
+    border: 3px solid white;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    padding: 20px 30px;
+    background-color: transparent;
+    cursor: pointer; }
+
+section {
+  background-image: url("../img/water.jpg"); }
+
+.reason {
+  height: 152px;
+  margin: 0 auto;
+  max-width: 500px;
+  position: relative; }
+  .reason:nth-child(2n-1) .reason_img {
+    background: transparent url("../img/reason.png") no-repeat scroll center center;
+    -webkit-animation: 3s linear 0s normal none infinite running rotate;
+            animation: 3s linear 0s normal none infinite running rotate; }
+  .reason:nth-child(2n) .reason_img {
+    -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+            transform: rotate(10deg);
+    background: transparent url("../img/reason2.png") no-repeat scroll center center;
+    -webkit-animation: 3s linear 0s normal none infinite running rotate2;
+            animation: 3s linear 0s normal none infinite running rotate2; }
+  .reason .reason_img {
+    float: left;
+    height: 152px;
+    position: relative;
+    width: 152px; }
+  .reason .reason_text {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 152px; }
+    .reason .reason_text p {
+      font-size: 21px; }
+  .reason ul {
+    font-size: 18px;
+    margin-left: 160px;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    list-style: none; }
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes rotate2 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+@keyframes rotate2 {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }

@@ -1,0 +1,137 @@
+@import "../css/fonts"
+$font: "OpenSansRegular"
+$main_color: #44c0c2
+$color_text: #4c535b
+
+*
+	margin: 0
+	padding: 0
+%before
+	content: ""
+	position: absolute
+%background
+	background-size: cover
+	background-position: center
+body
+	background: #fff
+	font-family: $font
+	min-width: 320px
+	font-size: 25px
+	color: $color_text
+	text-align: center
+.content
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0 10px
+	overflow: hidden
+header
+	.top_line
+		box-sizing: border-box
+		width: 100%
+	h1 a
+		color: $main_color
+		font-family: "LobsterRegular"
+		font-size: 43px
+		font-weight: 400
+		line-height: 24px
+		float: left
+		padding: 30px 0
+		text-decoration: none
+	nav
+		float: right
+		ul
+			li
+				display: inline-block
+				a
+					font-family: $font
+					font-size: 15px
+					line-height: 24px
+					color: $color_text
+					text-decoration: none
+					padding: 30px 20px
+					display: block
+					&.active, &:hover
+						border-bottom: 3px solid $main_color
+	.banner
+		background-image: url("../img/banner.jpg")
+		background-size: cover
+		background-position: center
+		// text-align: center
+		padding: 50px 30px
+		.text
+			position: absolute
+			top: 50%
+			width: 100%
+			transform: translate(0px, -50%)
+		h2
+			text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.26)
+			color: #fff
+			font-size: 52px
+			margin-bottom: 50px
+			font-weight: 300
+		p
+			color: #fff
+			font-size: 31px
+			line-height: 37px
+			max-width: 590px
+			margin: 0 auto
+			margin-bottom: 60px
+		button
+			color: #fff
+			font-size: 23px
+			line-height: 23px
+			border: 3px solid white
+			border-radius: 5px
+			padding: 20px 30px
+			background-color: transparent
+			cursor: pointer
+section
+	background-image: url("../img/water.jpg")
+.reason
+	height: 152px
+	margin: 0 auto
+	max-width: 500px
+	position: relative
+	&:nth-child(2n-1) .reason_img
+		background: rgba(0, 0, 0, 0) url("../img/reason.png") no-repeat scroll center center
+		animation: 3s linear 0s normal none infinite running rotate
+	&:nth-child(2n) .reason_img
+		transform: rotate(10deg)
+		background: rgba(0, 0, 0, 0) url("../img/reason2.png") no-repeat scroll center center
+		animation: 3s linear 0s normal none infinite running rotate2
+	.reason_img 
+		float: left
+		height: 152px
+		position: relative
+		width: 152px
+	.reason_text
+		position: absolute
+		text-align: center
+		top: 40%
+		width: 152px
+		p 
+			font-size: 21px
+	ul
+		font-size: 18px
+		margin-left: 160px
+		text-align: left
+		position: absolute
+		top: 50%
+		transform: translate(0, -50%)
+		list-style: none
+	
+	
+
+@keyframes rotate
+ from 
+	 transform: rotate(0)
+ to 
+	 transform: rotate(360deg)
+@keyframes rotate2
+ from 
+	 transform: rotate(0deg)
+ to 
+	 transform: rotate(-360deg)
+
+
+@import "_media"
